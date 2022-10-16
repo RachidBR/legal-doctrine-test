@@ -1,9 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
+import Cart from "./components/Cart/Cart";
+import ProductList from "./components/ProductList/ProductList";
 
 function App() {
   return (
     <div className="App">
+      <ProductList />
+      <Cart />
     </div>
   );
 }
