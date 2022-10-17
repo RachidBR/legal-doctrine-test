@@ -1,13 +1,13 @@
 import styles from "./Product.module.scss";
 type Props = {
   imageSrc: string;
-  title: string;
+  name: string;
   price: string;
   description: string;
 };
 
 const Product = (props: Props) => {
-  const { imageSrc, title, price, description } = props;
+  const { imageSrc, name, price, description } = props;
   return (
     <article className={styles.product}>
       <section className={styles.product_picture_section}>
@@ -23,7 +23,7 @@ const Product = (props: Props) => {
       
         <article className={styles.product_information}>
           <section className={styles.product_mainInformation}>
-            <h1 className={styles.product_title}>{title}</h1>
+            <h1 className={styles.product_title}>{name}</h1>
             <p className={styles.product_description}>{description}</p>
           </section>
           <section className={styles.product_secondaryInformation}>
