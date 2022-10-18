@@ -10,8 +10,8 @@ const CartItem = (props:Props) => {
         <img src={product?.imageSrc} alt="product image"></img>
       </section>
       <section className={styles.cartItem_information}>
-        <h2 id={`item_${product?.name}_quantity`}>Butter</h2>
-        <b>£</b>
+        <h2 id={`item_${product?.name}_quantity`}>{product?.name}</h2>
+        <b>£{product.price} </b>
         <section className={styles.cartItem_quantity}>
           <label htmlFor={`item_${product?.name}_quantity`}>quantity</label>
           <button type="button">-</button>

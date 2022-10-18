@@ -30,7 +30,7 @@ const Product = (props: Props) => {
             <section className={styles.product_rating}>
                 ⭐⭐⭐⭐⭐
             </section>
-            <b className={styles.product_price}>£ {price}</b>
+            <b className={styles.product_price}>£{price}</b>
           </section>
         </article>
       <button type="submit">ADD TO CART</button>

@@ -10,13 +10,12 @@ const Cart = () => {
         <h1>CART</h1>
       </header>
       <section className={styles.cart_products}>
-      {cartList && cartList.map((cartItem,index)=>{
-        return <Item
-        product={cartItem.product}
-        quantity={cartItem.quantity}
-        />
-      })}
-
+        {cartList &&
+          cartList.map((cartItem, index) => {
+            return (
+              <Item product={cartItem.product} quantity={cartItem.quantity} />
+            );
+          })}
       </section>
       <footer className={styles.cart_price}>
         <section className={styles.cart_price_subtotal}>
