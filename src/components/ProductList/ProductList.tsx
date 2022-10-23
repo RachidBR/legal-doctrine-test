@@ -7,9 +7,9 @@ const ProductList = () => {
     <article className={styles.productsPart}>
       <h1>Products</h1>
       <section className={styles.productList}>
-        <Product {...productList[0]} />
-        <Product {...productList[1]} />
-        <Product {...productList[2]} />
+        <Product productInformation={productList[0]} />
+        <Product productInformation={productList[1]} />
+        <Product productInformation={productList[2]} />
       </section>
     </article>
   );

@@ -6,11 +6,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p,h1,h2{
+p,
+h1,
+h2 {
   margin: 0;
   padding: 0;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
