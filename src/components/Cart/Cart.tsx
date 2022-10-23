@@ -25,6 +25,8 @@ const Cart = () => {
                 key={`cartItem_index_${index}`}
                 product={cartItem.product}
                 quantity={cartItem.quantity}
+                milkDiscount={milkDiscount}
+                breadDiscount={breadDiscount}
               />
             );
           })}

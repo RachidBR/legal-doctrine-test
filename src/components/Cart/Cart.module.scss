@@ -1,3 +1,21 @@
-.cart{
-    flex : 0.5;
+.cart {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  background-color: rgb(246, 246, 246);
+  padding: 50px;
+
+  .cart_price {
+    text-align: end;
+
+    h2 {
+      font-size: 14px;
+      color: rgb(105, 105, 105);
+    }
+    b {
+      font-size: 14px;
+      color: #000;
+      align-self: flex-end;
+    }
+  }
 }
